@@ -5,15 +5,15 @@ if __name__ == "__main__":
     import sys
 
     array = []
+    if len(sys.argv) >= 4:
+        if (sys.argv[2])[-2:] == "py":
+            sys.argv[2] = "*"
+            sys.argv[3] = sys.argv[len(sys.argv) - 1]
+            array = sys.argv
 
-    if (sys.argv[2])[-2:] == "py":
-        sys.argv[2] = "*"
-        sys.argv[3] = sys.argv[len(sys.argv) - 1]
-        array = sys.argv
-
-        for i in range(4, len(sys.argv)):
-            array.pop(4)
-        sys.argv = array
+            for i in range(4, len(sys.argv)):
+                array.pop(4)
+                sys.argv = array
 
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
