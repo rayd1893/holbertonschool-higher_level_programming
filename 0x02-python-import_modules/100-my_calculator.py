@@ -12,7 +12,7 @@ if __name__ == "__main__":
     b = int(sys.argv[3])
     sig = sys.argv[2]
 
-    list = {add:"+", sub:"-", mul:"*", div:"/"}
+    list = {add: "+", sub: "-", mul: "*", div: "/"}
 
     for fun, op in list.items():
         if op == sig:
