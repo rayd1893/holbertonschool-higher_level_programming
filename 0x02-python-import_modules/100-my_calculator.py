@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     for fun, op in list.items():
         if op == sig:
-            print("{:d}".format(fun(a, b)))
+            print("{:d} {} {:d} = {:d}".format(a, sig, b, fun(a, b)))
             sys.exit(0)
 
     print("Unknown operator. Available operators: +, -, * and /")
