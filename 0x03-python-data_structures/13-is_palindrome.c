@@ -13,7 +13,7 @@ int is_palindrome(listint_t **head)
 	int *numbers;
 
 	if (head == NULL)
-		return (NULL)
+		return (1);
 
 	h = head;
 
@@ -25,8 +25,6 @@ int is_palindrome(listint_t **head)
 		numbers++;
 	}
 
-	if (n == 0)
-		return (1);
 
 	while (i < n / 2)
 	{
