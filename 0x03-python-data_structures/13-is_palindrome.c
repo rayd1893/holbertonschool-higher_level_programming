@@ -22,6 +22,9 @@ int is_palindrome(listint_t **head)
 		numbers++;
 	}
 
+	if (n == 0)
+		return (1);
+
 
 	while (i < n / 2)
 	{
