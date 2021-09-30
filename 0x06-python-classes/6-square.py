@@ -77,8 +77,9 @@ class Square:
                 space = ""
             if self.__size == 0:
                 print("")
-            for i in range(self.__position[1]):
-                print()
+            else:
+                for i in range(self.__position[1]):
+                    print()
             for i in range(0, self.__size):
                 other = space
                 for j in range(0, self.__size):
