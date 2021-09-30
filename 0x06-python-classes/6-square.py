@@ -12,13 +12,17 @@ class Square:
             if size < 0:
                 raise ValueError
             self.__size = size
-            self.__position = position
         except ValueError:
             print("size must be >= 0", end="")
             raise
         except TypeError:
             print("size must be an integer", end="")
             raise
+
+        try:
+            self.position = position
+        except:
+            pass
 
     """Calculate area"""
     def area(self):
@@ -50,27 +54,34 @@ class Square:
     def position(self, value):
         count = 0
         message = "position must be a tuple of 2 positive integers"
-        for i in value:
-            if type(i) is not int:
+        try:
+            if type(value) is not tuple:
                 raise TypeError(message)
-            count += 1
-        if count != 2:
-            raise TypeError(message)
-        self.__position = value
+            if len(value) != 2:
+                raise TypeError(message)
+            for i in range(0, len(value)):
+                if type(value[i]) is not int:
+                    raise TypeError(message)
+            self.__position = value
+        except TypeError as e:
+            print("{}".format(e))
 
     """"Define my_print"""
     def my_print(self):
         space = " "
         other = ""
-        if self.__position[1] < 0:
-            space = ""
-        if self.__size == 0:
-            print("")
-        for i in range(0, self.__size):
-            other = space
-            for j in range(0, self.__size):
-                for k in range(0, self.__position[0]):
-                    print("{}".format(other), end="")
-                other = ""
-                print("#", end="")
-            print("")
+        try:
+            if self.__position[1] < 0:
+                space = ""
+            if self.__size == 0:
+                print("")
+            for i in range(0, self.__size):
+                other = space
+                for j in range(0, self.__size):
+                    for k in range(0, self.__position[0]):
+                        print("{}".format(other), end="")
+                    other = ""
+                    print("#", end="")
+                print("")
+        except:
+            pass
