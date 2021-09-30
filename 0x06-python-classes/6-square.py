@@ -84,6 +84,10 @@ class Square:
                         print("{}".format(other), end="")
                     other = ""
                     print("#", end="")
-                print("")
+                if self.__position[1] == 0:
+                    print("")
+                else:
+                    for l in range(0, self.__position[1]):
+                        print("")
         except:
             pass
