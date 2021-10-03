@@ -13,9 +13,19 @@ print(add_integer(100.3, -2))
 try:
 	print(add_integer(4, "School"))
 except Exception as e:
-       print(e)
+        print(e)
 try:
 	print(add_integer(None))
 except Exception as e:
-       print(e)
+        print(e)
+```
+
+```bash
+./0-main.py
+
+python3 -m doctest -v ./tests/0-add_integer.txt
+
+python3 -c 'print(__import__("0-add_integer").__doc__)'
+
+python3 -c 'print(__import__("0-add_integer").add_integer.__doc__)'
 ```
