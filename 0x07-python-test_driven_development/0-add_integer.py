@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Task: 0. Integers addition
 Test: ./tests/0-add_integer.txt
