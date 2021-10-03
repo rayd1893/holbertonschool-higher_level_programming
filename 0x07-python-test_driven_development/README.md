@@ -1,4 +1,4 @@
-# Tests in Python
+# 🖥️ Tests in Python
 ## Task 0: Integers addition
 **0-main.py:**
 
@@ -20,7 +20,9 @@ except Exception as e:
         print(e)
 ```
 
-```bash
+__Execute:__
+
+```sh
 ./0-main.py
 
 python3 -m doctest -v ./tests/0-add_integer.txt
