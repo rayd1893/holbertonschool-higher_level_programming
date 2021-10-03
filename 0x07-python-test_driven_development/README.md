@@ -23,11 +23,13 @@ except Exception as e:
 __Execute:__
 
 ```sh
-./0-main.py
+$ ./0-main.py
 
-python3 -m doctest -v ./tests/0-add_integer.txt
+$ python3 -m doctest -v ./tests/0-add_integer.txt
 
-python3 -c 'print(__import__("0-add_integer").__doc__)'
+$ python3 -c 'print(__import__("0-add_integer").__doc__)'
 
-python3 -c 'print(__import__("0-add_integer").add_integer.__doc__)'
+$ python3 -c 'print(__import__("0-add_integer").add_integer.__doc__)'
 ```
+
+![Image of Holberton School](https://assets.website-files.com/6105315644a26f77912a1ada/610540e8b4cd6969794fe673_Holberton_School_logo-04-04.svg)
