@@ -3,5 +3,4 @@
 
 
 class Rectangle:
-    '''Rectangle'''
     pass
