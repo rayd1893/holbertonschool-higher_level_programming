@@ -35,3 +35,5 @@ Now use it:
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer
+    >>> add_integer(10.6, 10.4)
+    20
