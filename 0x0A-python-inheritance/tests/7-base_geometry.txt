@@ -1,0 +1,53 @@
+==========================
+|TEST - Integer Validator|
+==========================
+
+
+Documentation
+==============
+	>>> module_doc = __import__("7-base_geometry").__doc__
+	>>> print(len(module_doc) > 0)
+	True
+
+	>>> class_doc = __import__("7-base_geometry").BaseGeometry.__doc__
+	>>> print(len(class_doc) > 0)
+	True
+
+	>>> area_doc = __import__("7-base_geometry").BaseGeometry.area.__doc__
+	>>> print(len(area_doc) > 0)
+	True
+
+	>>> validator_doc = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+	>>> print(len(validator_doc) > 0)
+	True
+
+Import Class
+============
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>> bg = BaseGeometry()
+
+Method - area()
+===============
+	>>> bg.area()
+	Traceback (most recent call last):
+	...
+	Exception: area() is not implemented
+
+Method - integer_validator()
+============================
+	>>> bg.integer_validator("age", 20)
+
+	>>> bg.integer_validator("age", "veinte")
+	Traceback (most recent call last):
+	...
+	TypeError: age must be an integer
+
+	>>> bg.integer_validator("age", 0)
+	Traceback (most recent call last):
+	...
+	ValueError: age must be greater than 0
+
+	>>> bg.integer_validator("age", -4)
+	Traceback (most recent call last):
+	...
+	ValueError: age must be greater than 0
