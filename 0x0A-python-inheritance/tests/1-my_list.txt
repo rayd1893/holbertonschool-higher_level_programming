@@ -17,3 +17,15 @@ Instance
 [1, 2, 3, 4, 5]
 >>> print(my_list)
 [1, 4, 2, 3, 5]
+>>> my_list.pop(1)
+4
+>>> print(my_list)
+[1, 2, 3, 5]
+>>> my_list.pop(20)
+Traceback (most recent call last):
+...
+IndexError: pop index out of range
+>>> my_list.other()
+Traceback (most recent call last):
+...
+AttributeError: 'MyList' object has no attribute 'other'
