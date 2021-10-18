@@ -13,3 +13,6 @@ class TestRectangle(unittest.TestCase):
         r1 = Rectangle(10, 2)
         id = r1.id
         self.assertEqual(id, 2)
+        r3 = Rectangle(10, 2, 0, 0, 10)
+        id = r3.id
+        self.assertEqual(id, 10)
