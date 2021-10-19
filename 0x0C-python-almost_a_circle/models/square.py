@@ -34,3 +34,5 @@ class Square(Rectangle):
                 '''Set size'''
                 self.validator_integer("width", size, 1)
                 self.__size = size
+                self.width = size
+                self.height = size
