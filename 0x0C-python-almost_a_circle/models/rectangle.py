@@ -108,3 +108,20 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print("#", end="")
             print()
+
+    def update(self, *args):
+        '''Update rectangle'''
+        dic = {0: self.id,
+               1: self.__width,
+               2: self.__height,
+               3: self.__x,
+               4: self.__y}
+
+        for i in range(len(args)):
+            dic[i] = args[i]
+
+        self.id = dic[0]
+        self.__width = dic[1]
+        self.__height = dic[2]
+        self.__x = dic[3]
+        self.__y = dic[4]
