@@ -109,19 +109,11 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         '''Update rectangle'''
-        dic = {0: self.id,
-               1: self.__width,
-               2: self.__height,
-               3: self.__x,
-               4: self.__y}
-
+        list = ['id', 'width', 'height', 'x', 'y']
         for i in range(len(args)):
-            dic[i] = args[i]
-
-        self.id = dic[0]
-        self.__width = dic[1]
-        self.__height = dic[2]
-        self.__x = dic[3]
-        self.__y = dic[4]
+            setattr(self, list[i], args[i])
+        if len(args) == 0:
+            for (key, value) in kwargs.items():
+                setattr(self, key, value)
