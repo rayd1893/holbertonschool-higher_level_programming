@@ -22,7 +22,7 @@ class Rectangle(Base):
         y = self.__y
         width = self.__width
         height = self.__height
-        form = "Rectangle"
+        form = type(self).__name__
         txt = "[" + form + "] "
         txt += "(" + str(self.id) + ") "
         txt += str(x) + "/" + str(y) + " - "
