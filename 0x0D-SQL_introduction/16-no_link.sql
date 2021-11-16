@@ -1,5 +1,5 @@
 -- Sort by score
 SELECT score, name
 FROM second_table
-ORDER BY score DESC
-LIMIT 4;
+WHERE name IS NOT NULL
+ORDER BY score DESC;
