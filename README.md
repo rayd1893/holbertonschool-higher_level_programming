@@ -21,4 +21,3 @@ print("Best School")
 <p align="center">
    <img src="https://lh3.googleusercontent.com/proxy/NvzVwXrbHBiPWh8UFgX2lvvbMzuTaGvccdim8l6M3LGDB0qj4e4Eob1RROBIE6bhlsCa0PoUHYLGQKC3sBdUdkG0KvoQ" alt="python"/>
 </p>
-![alt text](https://lh3.googleusercontent.com/proxy/NvzVwXrbHBiPWh8UFgX2lvvbMzuTaGvccdim8l6M3LGDB0qj4e4Eob1RROBIE6bhlsCa0PoUHYLGQKC3sBdUdkG0KvoQ)
