@@ -13,4 +13,8 @@ Python is a widely used general-purpose, high-level programming language. It was
 print("Best School")
 ```
 
+## Guido Van Rossum
+
+![alt text](https://pbs.twimg.com/profile_images/424495004/GuidoAvatar_400x400.jpg)
+
 ![alt text](https://lh3.googleusercontent.com/proxy/NvzVwXrbHBiPWh8UFgX2lvvbMzuTaGvccdim8l6M3LGDB0qj4e4Eob1RROBIE6bhlsCa0PoUHYLGQKC3sBdUdkG0KvoQ)
