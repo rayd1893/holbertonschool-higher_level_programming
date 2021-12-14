@@ -6,14 +6,15 @@ class Rectangle {
       this.width = w;
       this.height = h;
     }
-    this.print = function () {
-      const text = 'X';
-      let i = 0;
-      while (i < this.height) {
-        console.log(text.repeat(this.width));
-        i++;
-      }
-    };
+  }
+
+  print () {
+    const text = 'X';
+    let i = 0;
+    while (i < this.height) {
+      console.log(text.repeat(this.width));
+      i++;
+    }
   }
 }
 
