@@ -8,8 +8,8 @@ class Rectangle {
       this.print = function () {
         const text = 'X';
         let i = 0;
-        while (i < h) {
-          console.log(text.repeat(w));
+        while (i < this.height) {
+          console.log(text.repeat(this.width));
           i++;
         }
       };
