@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-class Square extends require('./5-square')  {
+class Square extends require('./5-square') {
   charPrint (c = 'X') {
     let i = 0;
 
