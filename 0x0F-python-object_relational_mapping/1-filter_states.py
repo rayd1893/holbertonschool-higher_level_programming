@@ -14,7 +14,7 @@ if __name__ == "__main__":
     c = db.cursor()
     query = "SELECT * "
     query += "FROM states "
-    query += "WHERE name LIKE 'N%' "
+    query += "WHERE name COLLATE utf8mb4_bin LIKE 'N%' "
     query += "ORDER BY 1;"
     c.execute(query)
     registers = c.fetchall()
