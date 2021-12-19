@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'''Connection to database'''
 if __name__ == "__main__":
 
     import sys
