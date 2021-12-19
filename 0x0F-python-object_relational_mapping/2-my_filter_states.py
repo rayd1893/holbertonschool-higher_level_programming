@@ -15,7 +15,7 @@ if __name__ == "__main__":
     c = db.cursor()
     query = "SELECT * "
     query += "FROM states "
-    query += "WHERE name = '{}' "
+    query += "WHERE name COLLATE utf8mb4_bin = '{}' "
     query += "ORDER BY 1;"
     c.execute(query.format(state))
     registers = c.fetchall()
