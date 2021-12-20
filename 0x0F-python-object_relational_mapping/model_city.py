@@ -6,7 +6,6 @@ from sqlalchemy.orm import relationship
 from model_state import Base
 
 
-
 class City(Base):
     '''Create table state from ORM'''
     __tablename__ = "cities"
