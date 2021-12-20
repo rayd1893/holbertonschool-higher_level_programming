@@ -16,3 +16,7 @@ class State(Base):
         '''Define Constructor'''
         self.id = id
         self.name = name
+
+    def __init__(self, name):
+        '''Define Constructor'''
+        self.name = name
