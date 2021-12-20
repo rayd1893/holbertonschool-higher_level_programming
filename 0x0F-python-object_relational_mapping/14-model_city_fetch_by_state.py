@@ -17,6 +17,7 @@ if __name__ == "__main__":
 
     citiesByStates = session.query(City) \
         .join(State, City.states) \
+        .order_by(City.id) \
         .all()
 
     for city in citiesByStates:
