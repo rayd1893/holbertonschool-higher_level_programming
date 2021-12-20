@@ -11,3 +11,8 @@ class State(Base):
     __tablename__ = "states"
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
+
+    def __init__(self, id, name):
+        '''Define Constructor'''
+        self.id = id
+        self.name = name
