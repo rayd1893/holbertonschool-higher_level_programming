@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 '''
-Print status
+Print status of a request to a url
 '''
 
 
