@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-'''Print status'''
+'''
+Print status
+'''
 
 
 if __name__ == "__main__":
