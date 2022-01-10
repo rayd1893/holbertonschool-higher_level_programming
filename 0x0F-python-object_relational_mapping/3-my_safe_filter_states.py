@@ -22,3 +22,5 @@ if __name__ == "__main__":
     registers = c.fetchall()
     for i in registers:
         print(i)
+    c.close()
+    db.close()

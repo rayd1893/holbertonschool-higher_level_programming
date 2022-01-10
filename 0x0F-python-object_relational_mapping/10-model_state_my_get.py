@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Start link class to table in database"""
 import sys
+from typing import final
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
 
@@ -23,3 +24,5 @@ if __name__ == "__main__":
         print(f'{state.id}')
     except Exception:
         print("Not found")
+    finally:
+        session.close()
