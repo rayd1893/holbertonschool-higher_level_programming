@@ -12,7 +12,7 @@ if __name__ == "__main__":
     r = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
     data = r.json()
     if type(data) is dict and len(data) != 0:
-        print('[{}] {}'.format(data.get('id'), data.get('name'))
+        print('[{}] {}'.format(data.get('id'), data.get('name')))
     else:
         if len(data) == 0:
             print('No result')
