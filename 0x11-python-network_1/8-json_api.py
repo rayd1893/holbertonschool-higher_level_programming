@@ -5,16 +5,15 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    try:
+    q = ""
+    if len(argv) == 2:
         q = argv[1]
-    except Exception as e:
-        q = ""
-    r = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
-    data = r.json()
-    if type(data) is dict and len(data) != 0:
-        print('[{}] {}'.format(data.get('id'), data.get('name')))
-    else:
-        if len(data) == 0:
+    try:
+        r = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
+        data = r.json()
+        if data:
+            print('[{}] {}'.format(data.get('id'), data.get('name')))
+        else:
             print('No result')
-        if type(data) is not dict:
-            print('Not a valid JSON')
+    except Exception as e:
+        print('Not a valid JSON')
