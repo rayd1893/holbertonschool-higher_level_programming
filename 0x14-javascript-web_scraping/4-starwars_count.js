@@ -11,7 +11,7 @@ request(url, { json: true }, function (error, res, body) {
   let count = 0;
   for (const i of results) {
     for (const j of i.characters) {
-      if (j === 'https://swapi-api.hbtn.io/api/people/18/') {
+      if (j.indexOf('18') > 0) {
         count += 1;
       }
     }
