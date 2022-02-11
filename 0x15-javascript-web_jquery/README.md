@@ -1073,6 +1073,3 @@ guillaume@ubuntu:~/0x15$
 * GitHub repository:  ` holbertonschool-higher_level_programming ` 
 * Directory:  ` 0x15-javascript-web_jquery ` 
 * File:  ` 103-script.js ` 
- Self-paced manual review  Panel footer - Controls 
-Ready for a manualreviewLink to your project reviewhttps://intranet.hbtn.io/corrections/298480/correct[]() 
-[Cancel and continue to work on the project.](https://intranet.hbtn.io/projects/305#) 
